@@ -2,7 +2,7 @@ name: Send submodule updates to parent repo
 
 on:
   push:
-    branches: 
+    branches:
       - main
 
 jobs:
@@ -11,8 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with: 
-          repository: project-creator
+        with:
+          repository: zh3nhua94/project-creator
           token: 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
           submodules: true
 
