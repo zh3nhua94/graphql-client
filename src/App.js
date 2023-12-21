@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 
 const httpLink = new HttpLink({
-	uri: "http://localhost:8800/graphql",
+	uri: process.env.REACT_APP_API_URL,
 });
 
 const cache = new InMemoryCache({
